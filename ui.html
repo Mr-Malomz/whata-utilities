@@ -1,0 +1,259 @@
+<link
+	rel="stylesheet"
+	href="https://cdn.jsdelivr.net/gh/thomas-lowry/figma-plugin-ds/dist/figma-plugin-ds.css"
+/>
+<!-- <link rel="stylesheet" href="./style.css" /> -->
+<style>
+	body {
+		padding: 1em;
+	}
+
+	.div {
+		margin-bottom: 1.5em;
+	}
+
+	input {
+		display: block;
+	}
+
+	label {
+		font-size: 12px;
+		font-weight: 500;
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	select {
+		height: 35px;
+		border-color: #d4d4d8;
+		border-radius: 4px;
+		width: 200px;
+	}
+
+	.corner {
+		border-top: 0.1px solid #d4d4d8;
+		padding-top: 1.5em;
+	}
+
+	.corner-wrapper {
+		display: flex;
+	}
+
+	.type {
+		height: 35px;
+		width: 35px;
+		background: #e5e7eb;
+		border-radius: 4px;
+		margin-right: 10px;
+		display: flex;
+	}
+
+	.type:hover {
+		background: #d1d5db;
+		cursor: pointer;
+	}
+
+	.top-right {
+		display: inline-flex;
+		justify-content: right;
+	}
+
+	.bottom-left {
+		display: inline-flex;
+		justify-content: left;
+	}
+
+	.bottom-left-inner {
+		align-self: flex-end;
+	}
+
+	.bottom-right {
+		display: inline-flex;
+		justify-content: right;
+	}
+
+	.center {
+		justify-content: center;
+		align-items: center;
+	}
+</style>
+
+<div class="div">
+	<label for="radius">Radius Type</label>
+	<select name="pets" id="radius-select">
+		<option value="">--Select an option--</option>
+		<option value="input">input & button</option>
+		<option value="card">card</option>
+		<option value="modal">modal</option>
+		<option value="fullRounded">full rounded</option>
+	</select>
+</div>
+
+<div class="corner">
+	<label for="type">Corner type</label>
+	<section class="corner-wrapper">
+		<div class="type">
+			<svg
+				width="17"
+				height="17"
+				viewBox="0 0 17 17"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g clip-path="url(#clip0_9_11)">
+					<path
+						d="M17 1.88889H9.44444C5.27 1.88889 1.88889 5.27 1.88889 9.44444V17H0V9.44444C0 4.22922 4.22922 0 9.44444 0H17V1.88889Z"
+						fill="black"
+					/>
+				</g>
+				<defs>
+					<clipPath id="clip0_9_11">
+						<rect width="17" height="17" fill="white" />
+					</clipPath>
+				</defs>
+			</svg>
+		</div>
+		<div class="type top-right">
+			<svg
+				width="17"
+				height="17"
+				viewBox="0 0 17 17"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<path
+					d="M4.76837e-07 1.88889H7.55556C11.73 1.88889 15.1111 5.27 15.1111 9.44444V17H17V9.44444C17 4.22922 12.7708 0 7.55556 0H4.76837e-07V1.88889Z"
+					fill="black"
+				/>
+			</svg>
+		</div>
+		<div class="type bottom-left">
+			<svg
+				width="17"
+				height="17"
+				viewBox="0 0 17 17"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				class="bottom-left-inner"
+			>
+				<path
+					d="M17 15.1111H9.44444C5.27 15.1111 1.88889 11.73 1.88889 7.55556V4.76837e-07H0V7.55556C0 12.7708 4.22922 17 9.44444 17H17V15.1111Z"
+					fill="black"
+				/>
+			</svg>
+		</div>
+		<div class="type bottom-right">
+			<svg
+				width="17"
+				height="17"
+				viewBox="0 0 17 17"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				class="bottom-left-inner"
+			>
+				<path
+					d="M4.76837e-07 15.1111H7.55556C11.73 15.1111 15.1111 11.73 15.1111 7.55556V4.76837e-07H17V7.55556C17 12.7708 12.7708 17 7.55556 17H4.76837e-07V15.1111Z"
+					fill="black"
+				/>
+			</svg>
+		</div>
+		<div class="type bottom-right">
+			<svg
+				width="34"
+				height="35"
+				viewBox="0 0 34 35"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g clip-path="url(#clip0_0_1)">
+					<path
+						d="M17 33.1111H9.44444C5.27 33.1111 1.88889 29.73 1.88889 25.5556V18H0V25.5556C0 30.7708 4.22922 35 9.44444 35H17V33.1111Z"
+						fill="black"
+					/>
+				</g>
+				<path
+					d="M17 1.88889H24.5556C28.73 1.88889 32.1111 5.27 32.1111 9.44444V17H34V9.44444C34 4.22922 29.7708 0 24.5556 0H17V1.88889Z"
+					fill="black"
+				/>
+				<defs>
+					<clipPath id="clip0_0_1">
+						<rect
+							width="17"
+							height="17"
+							fill="white"
+							transform="translate(0 18)"
+						/>
+					</clipPath>
+				</defs>
+			</svg>
+		</div>
+		<div class="type bottom-right">
+			<svg
+				width="34"
+				height="34"
+				viewBox="0 0 34 34"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g clip-path="url(#clip0_16_19)">
+					<path
+						d="M17 1.88889H9.44444C5.27 1.88889 1.88889 5.27 1.88889 9.44444V17H0V9.44444C0 4.22922 4.22922 0 9.44444 0H17V1.88889Z"
+						fill="black"
+					/>
+				</g>
+				<path
+					d="M17 32.1111H24.5556C28.73 32.1111 32.1111 28.73 32.1111 24.5556V17H34V24.5556C34 29.7708 29.7708 34 24.5556 34H17V32.1111Z"
+					fill="black"
+				/>
+				<defs>
+					<clipPath id="clip0_16_19">
+						<rect width="17" height="17" fill="white" />
+					</clipPath>
+				</defs>
+			</svg>
+		</div>
+		<div class="type center">
+			<svg
+				width="40"
+				height="40"
+				viewBox="0 0 40 40"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<g clip-path="url(#clip0_16_20)">
+					<path
+						d="M17 38.1111H9.44444C5.27 38.1111 1.88889 34.73 1.88889 30.5556V23H0V30.5556C0 35.7708 4.22922 40 9.44444 40H17V38.1111Z"
+						fill="black"
+					/>
+				</g>
+				<path
+					d="M23 1.88889H30.5556C34.73 1.88889 38.1111 5.27 38.1111 9.44444V17H40V9.44444C40 4.22922 35.7708 0 30.5556 0H23V1.88889Z"
+					fill="black"
+				/>
+				<g clip-path="url(#clip1_16_20)">
+					<path
+						d="M17 1.88889H9.44444C5.27 1.88889 1.88889 5.27 1.88889 9.44444V17H0V9.44444C0 4.22922 4.22922 0 9.44444 0H17V1.88889Z"
+						fill="black"
+					/>
+				</g>
+				<path
+					d="M23 38.1111H30.5556C34.73 38.1111 38.1111 34.73 38.1111 30.5556V23H40V30.5556C40 35.7708 35.7708 40 30.5556 40H23V38.1111Z"
+					fill="black"
+				/>
+				<defs>
+					<clipPath id="clip0_16_20">
+						<rect
+							width="17"
+							height="17"
+							fill="white"
+							transform="translate(0 23)"
+						/>
+					</clipPath>
+					<clipPath id="clip1_16_20">
+						<rect width="17" height="17" fill="white" />
+					</clipPath>
+				</defs>
+			</svg>
+		</div>
+	</section>
+</div>
